@@ -1,3 +1,7 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: "df577aa7-6cc6-40a7-ae9c-eee26c1e87bb"
 env:
   global:
     - CC_TEST_REPORTER_ID=f4ef40aa30ae5b450a60e5cca365a73f0ba55835fb381d345b93a88fe4944335
