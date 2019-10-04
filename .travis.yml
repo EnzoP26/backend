@@ -21,8 +21,7 @@ after_script:
 
 deploy:
   provider: heroku
-  api_key:
-    secure: "df577aa7-6cc6-40a7-ae9c-eee26c1e87bb"
+  api_key: "df577aa7-6cc6-40a7-ae9c-eee26c1e87bb"
   app: enzop26-backend
   on:
     repo: EnzoP26/backend
