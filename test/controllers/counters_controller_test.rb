@@ -33,8 +33,9 @@ class CountersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update counter" do
-    patch counter_url(@counter), params: { counter: { name: @counter.name, value: @counter.value } }
+  test "should increment counter" do
+    old_value = @counter.value
+    patch counter_url(@counter)
     assert_redirected_to counter_url(@counter)
   end
 
